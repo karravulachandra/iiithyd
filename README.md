@@ -17,13 +17,7 @@ Usage
 Run the simulator using the following command:
 bash
 Download
-Copy code
-python simulator.py
-To simulate the data for a specific sensor, send a POST request to the /simulate_node endpoint with the node_type parameter set to the appropriate sensor type. For example, using curl:
-bash
-Download
-Copy code
-curl -X POST -F "node_type=AQ" http://localhost:5000/simulate_node
+To simulate the data for a specific sensor, send a POST request to the /simulate_node endpoint with the node_type parameter set to the appropriate sensor type. For 
 The simulator will generate random data for the specified sensor and send it to the IOT platform. The response status will be displayed in the browser or terminal.
 Assumptions
 The IOT platform has a REST API endpoint that accepts POST requests with JSON data.
@@ -38,3 +32,6 @@ To analyze the performance of the platform, you can measure the time it takes fo
 
 Data Visualization
 To visualize the data, you can use any visualization tool or code up the frontend. The data can be fetched live from the platform using the IOT platform's API.
+
+
+![diagram](https://github.com/chandrashivaji/iiithyd/assets/94832445/59ee20ad-5c1f-4fcd-bbb4-f6afe6b014e1)
